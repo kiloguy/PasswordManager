@@ -17,3 +17,7 @@ The path to the password data file is `$HOME\.pmdata`, which stores all the encr
 ### Screenshot
 
 ![Screenshot](screenshot.png)
+
+### Get
+
+A [single-file](https://learn.microsoft.com/en-us/dotnet/core/deploying/single-file/overview?tabs=vs) executable for win-x64 platform is in [Releases](https://github.com/kiloguy/PasswordManager/releases).
