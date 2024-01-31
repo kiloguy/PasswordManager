@@ -9,7 +9,11 @@ store the master password and encrypt all the passwords.
 
 * Add, edit, and delete password entries.
 * Memorize one master password to access all the saved password entries.
-* Temporally copy password to clipboard without showing it on screen.
+* Temporally copy password to clipboard without showing it on screen by double click.
 * Generating new random passwords with cryptographic security.
 
 The path to the password data file is `$HOME\.pmdata`, which stores all the encrypted data.
+
+### Screenshot
+
+![Screenshot](screenshot.png)
