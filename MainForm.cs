@@ -208,7 +208,11 @@ namespace PasswordManager
 
         private void clipboardTimer_Tick(object sender, EventArgs e)
         {
-            Clipboard.SetText(clipboardOriginalText);
+            if (String.IsNullOrEmpty(clipboardOriginalText)) // Clipboard.SetText("") throws exception
+                Clipboard.Clear();
+            else
+                Clipboard.SetText(clipboardOriginalText);
+
             clipboardContainsPassword = false;
             clipboardTimer.Stop();
             hintStatusLabel.Text = "Clipboard restored.";
